@@ -127,6 +127,11 @@ Then navigate to `http://localhost:3000` in your browser to view the app.
 By the end of this section, you should be able to create an account/login to
 the app on your local machine.
 
+Note: You will need to edit the .env file that should have been created upon
+running ```bin/rails``` during initial setup. For more information regarding
+the .env file, please see the [Environment](#environment) section of this
+ReadMe.
+
 This application uses Amazon OAuth for authentication. In order to create an
 account or login locally:
 
