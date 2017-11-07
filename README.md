@@ -188,6 +188,7 @@ account or login locally:
    ```
 
    Be sure to logout then login. At this point, you should see `Admin Tools` appear in the header.
+   
 
 5. Start your Rails app with `rails server`. You're ready to OAuth!
 
