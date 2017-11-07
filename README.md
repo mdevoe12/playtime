@@ -136,7 +136,7 @@ This application uses Amazon OAuth for authentication. In order to create an
 account or login locally:
 
 1. Follow [these instructions][Amazon OAuth Instructions] to create an Amazon
-   app. This is required for logging in/creating
+   app. This is required for logging in/creating an account.
 
 2. If you don't have a `.env` file, copy the sample .env configuration:
 
