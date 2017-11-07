@@ -135,8 +135,10 @@ ReadMe.
 This application uses Amazon OAuth for authentication. In order to create an
 account or login locally:
 
-1. Follow [these instructions][Amazon OAuth Instructions] to create an Amazon
+1. Follow the Prereqs section in [these instructions][Amazon OAuth Instructions] to Register an Amazon
    app. This is required for logging in/creating an account.
+
+
 
 2. If you don't have a `.env` file, copy the sample .env configuration:
 
@@ -169,7 +171,23 @@ account or login locally:
    account will be promoted to an admin. If you haven't, your new admin account
    will be created.
 
-   You can also change your user role by using `rails console`.
+   If you created an account You can also change your user role by using `rails console`.
+
+   To update via console:
+   ```
+   rails c
+   User.last
+   ```
+
+   Confirm the returned record is yours and the admin attribute is marked as `false`.
+
+   Then run:
+
+   ```
+   User.last.update(admin: true)
+   ```
+
+   Be sure to logout then login. At this point, you should see `Admin Tools` appear in the header.
 
 5. Start your Rails app with `rails server`. You're ready to OAuth!
 
