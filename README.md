@@ -154,6 +154,22 @@ account or login locally:
   ![Alt Text](https://i.imgur.com/KwydrRX.png)
 
 
+  B. Click ```Register new application```
+
+  ![Alt Text](https://i.imgur.com/FS5oc6g.png)
+
+
+  C. Fill out required info. This isn't for production, so 100% accurate information isn't of the essence.
+
+
+  ![Alt Text](https://i.imgur.com/SghPaVg.png)
+
+
+  D. Enter the callback info and grab your Client-ID and Secret which will be input into your .env file.
+
+  ![Alt Text](https://i.imgur.com/iZFcf9H.png)
+
+
 2. If you don't have a `.env` file, copy the sample .env configuration:
 
     ```bash
