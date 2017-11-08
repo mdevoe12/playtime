@@ -77,6 +77,15 @@ You need:
   - Postgres >=9.1
   - A JavaScript runtime, we recommend Node.js
 
+To check versions and/or if the requirements are installed, run the following commands in your terminal:
+
+```
+ruby -v
+rails -v
+postgres -V
+node -v
+```
+
 You will need Node.js (which comes bundled with NPM) and it is easiest to
 install on Mac, Windows, or Linux [with your favorite package manager][node-pkg]
 or by downloading directly from [nodejs.org][node-direct].
@@ -138,6 +147,11 @@ account or login locally:
 1. Follow the Prereqs section in [these instructions][Amazon OAuth Instructions] to Register an Amazon
    app. This is required for logging in/creating an account.
 
+   In addition to following the instructions, see the below screenshots to also help guide you through the process:
+
+  A. Sign in to Amazon
+
+  ![Alt Text](https://i.imgur.com/KwydrRX.png)
 
 
 2. If you don't have a `.env` file, copy the sample .env configuration:
@@ -191,6 +205,9 @@ account or login locally:
 
 
 5. Start your Rails app with `rails server`. You're ready to OAuth!
+
+
+    To create a user, browse to http://localhost:3000 and click ```Log In (Development)``` in the navbar. Your user will be created upon submitting your name and email address.
 
 
 [Amazon OAuth Instructions]: https://github.com/wingrunr21/omniauth-amazon#prereqs
